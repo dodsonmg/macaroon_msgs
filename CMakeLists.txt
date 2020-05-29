@@ -18,7 +18,9 @@ set(msg_files
   "msg/Macaroon.msg"
   "msg/Macaroons.msg"
   "msg/MacaroonResourceRequest.msg"
-  "msg/DischargeMacaroons.msg"
+  "msg/ResourceMacaroon.msg"
+  "msg/DischargeMacaroon.msg"
+  "msg/MacaroonCommand.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
