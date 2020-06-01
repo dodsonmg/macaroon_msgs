@@ -16,10 +16,13 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/Macaroon.msg"
-  "msg/ResourceMacaroon.msg"
+  "msg/TofuRequest.msg"
+  "msg/TofuResponse.msg"
+  "msg/AuthenticationRequest.msg"
   "msg/DischargeMacaroon.msg"
-  "msg/MacaroonCommand.msg"
-  "msg/ResourceRequest.msg"
+  "msg/ResourceTokenRequest.msg"
+  "msg/ResourceMacaroon.msg"
+  "msg/CommandMacaroon.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
