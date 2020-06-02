@@ -1,0 +1,5 @@
+# This service sends a TOFU request and response with a key for a discharge macaroon
+
+string tofu_request
+---
+string key

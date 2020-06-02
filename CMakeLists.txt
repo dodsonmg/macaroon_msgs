@@ -24,8 +24,14 @@ set(msg_files
   "msg/ResourceMacaroon.msg"
   "msg/CommandMacaroon.msg"
 )
+set(srv_files
+  "srv/InitiateTofu.srv"
+  "srv/Authenticate.srv"
+  "srv/GetResourceToken.srv"
+  "srv/UseResourceToken.srv"
+)
 rosidl_generate_interfaces(${PROJECT_NAME}
-  ${msg_files}
+  ${msg_files} ${srv_files}
   DEPENDENCIES std_msgs
   ADD_LINTER_TESTS
 )
