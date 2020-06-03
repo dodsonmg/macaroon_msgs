@@ -3,3 +3,4 @@
 string tofu_request
 ---
 string key
+Macaroon resource_macaroon
